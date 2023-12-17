@@ -77,7 +77,7 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 
 3. Download [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) to checkpoints.
 
-4. run `app.py`.
+4. Run `app.py`.
 ```
 cd demo
 python app.py --model checkpoint/osprey_7b
