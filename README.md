@@ -27,7 +27,7 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 </div>
 
 ## Updates 📌
-[2023/12/18]🔥 We released the code, [osprey-7b model]() and [online demo](http://111.0.123.204:8000/) for Osprey.
+[2023/12/18]🔥 We released the code, [osprey-7b model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
 
 ## What is Osprey 👀
 Osprey is a mask-text instruction tuning approach that extends MLLMs by incorporating pixel-wise mask regions into language instructions, enabling **fine-grained visual understanding**.  Based on input mask region, Osprey generate the semantic descriptions including **short description** and **detailed description**.
@@ -104,7 +104,7 @@ pip install flash-attn --no-build-isolation
 
 ## Checkpoints 🤖
 1. Convnext-large-CLIP-model🤗: [model](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin)
-2. Osprey-7b model🤗: [model]()
+2. Osprey-7b model🤗: [model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)
 
 Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the path of `Convnext-large-CLIP-model`.
 
