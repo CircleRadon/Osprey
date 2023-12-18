@@ -4,7 +4,7 @@
 
 <div align=center>
 
-![Static Badge](https://img.shields.io/badge/Osprey-v1-F7C97E) [![arXiv preprint](https://img.shields.io/badge/arxiv-xxx-ECA8A7?logo=arxiv)]() [![Dataset](https://img.shields.io/badge/Dataset-coming_soon-CFAFD4)]() [![video](https://img.shields.io/badge/Watch_Video-36600E?logo=youtube&logoColor=green)](https://youtu.be/YsxqHBBnDfk) [![Static Badge](https://img.shields.io/badge/Try_Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) 
+![Static Badge](https://img.shields.io/badge/Osprey-v1-F7C97E) [![arXiv preprint](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)](https://arxiv.org/pdf/2312.10032.pdf) [![Dataset](https://img.shields.io/badge/Dataset-coming_soon-CFAFD4)]() [![video](https://img.shields.io/badge/Watch_Video-36600E?logo=youtube&logoColor=green)](https://youtu.be/YsxqHBBnDfk) [![Static Badge](https://img.shields.io/badge/Try_Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) 
 </div>
 
 
@@ -126,8 +126,8 @@ Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the pa
   title={Osprey: Pixel Understanding with Visual Instruction Tuning},
   author={Yuqian Yuan, Wentong Li, Jian Liu, Dongqi Tang, Xinjie Luo, Chi Qin, Lei Zhang and Jianke Zhu},
   year={2023},
-  eprint={},
- archivePrefix={arXiv},
- primaryClass={cs.CV}
+  eprint={2312.10032},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
 }
 ```
