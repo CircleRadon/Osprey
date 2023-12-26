@@ -69,6 +69,8 @@ password: osprey
 </table>
 
 ### Offline demo
+💻 **requirments:** For this demo, it needs about `17GB` GPU memory for Osprey(15GB) and SAM(2GB).
+
 1. First install [Gradio-Osprey-Demo](https://github.com/LiWentomng/gradio-osprey-demo).
 2. Install Segment Anything.
 ```
