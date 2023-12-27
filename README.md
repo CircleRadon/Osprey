@@ -110,6 +110,11 @@ pip install flash-attn --no-build-isolation
 
 Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the path of `Convnext-large-CLIP-model`.
 
+<div align=center>
+<img src="./assets/performance.png" />
+</div>
+
+
 ## TODO List 📝
 - [x] Release the checkpoints, inference codes and demo.
 - [ ] Release the dataset and training scripts.
