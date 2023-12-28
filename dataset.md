@@ -5,7 +5,7 @@
 | Data | Size |
 | --- | ---: |
 | osprey_short_form.json | 57 MB |
-| osprey_conversations.json |  106 MB |
+| osprey_conversation.json |  106 MB |
 | osprey_detail_description.json | 63.4 MB |
 | osprey_part_level.json | 153 MB |
 | osprey_lvis_positive_negative.json | 140 MB |
@@ -39,7 +39,7 @@ After downloading all of them, organize the data as follows in `./data`,
 │   └── finetune_refcoco+_train_with_mask.json
 ├── Osprey-724K
 │   ├── osprey_short_form.json
-│   ├── osprey_conversations.json
+│   ├── osprey_conversation.json
 │   ├── osprey_detail_description.json
 │   ├── osprey_part_level.json
 │   └── osprey_lvis_positive_negative.json
