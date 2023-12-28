@@ -4,7 +4,7 @@
 
 <div align=center>
 
-![Static Badge](https://img.shields.io/badge/Osprey-v1-F7C97E) [![arXiv preprint](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)](https://arxiv.org/pdf/2312.10032.pdf) [![Dataset](https://img.shields.io/badge/Dataset-coming_soon-CFAFD4)]() [![video](https://img.shields.io/badge/Watch_Video-36600E?logo=youtube&logoColor=green)](https://youtu.be/YsxqHBBnDfk) [![Static Badge](https://img.shields.io/badge/Try_Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) 
+![Static Badge](https://img.shields.io/badge/Osprey-v1-F7C97E) [![arXiv preprint](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)](https://arxiv.org/pdf/2312.10032.pdf) [![Dataset](https://img.shields.io/badge/Dataset-Hugging_Face-CFAFD4)](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) [![video](https://img.shields.io/badge/Watch_Video-36600E?logo=youtube&logoColor=green)](https://youtu.be/YsxqHBBnDfk) [![Static Badge](https://img.shields.io/badge/Try_Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) 
 </div>
 
 
@@ -27,6 +27,8 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 </div>
 
 ## Updates 📌
+[2023/12/29]🔥 We released the training code and [Osprey-724K](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) dataset.
+
 [2023/12/18]🔥 We released the code, [osprey-7b model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
 
 ## What is Osprey 👀
@@ -104,6 +106,14 @@ pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
 
+## Dataset 🌟
+The all datasets for training can be found in [Dataset preparation](./dataset.md).
+
+**Osprey-724K**: 🤗[Hugging Face](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K)
+
+`Osprey-724K` is an instruction dataset with mask-text pairs, containing around 724K GPT-generated multimodal dialogues to encourage MLLMs for fine-grained pixel-level image understanding. It contains object-level, part-level and additional instruction samples for robustness and flexibility.
+<img src="./assets/data.png" />
+
 ## Training 🚀
 - **Stage1: Image-Text Alignment Pre-training**
   - The pretrained projector weights for Convnext-large-CLIP can be found in [projector weights](https://huggingface.co/sunshine-lwt/osprey-v1.0-mlp2x-512px-convnext-pretrain-vicuna-7b-v1.5/tree/main).
@@ -136,7 +146,7 @@ Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the pa
 
 ## TODO List 📝
 - [x] Release the checkpoints, inference codes and demo.
-- [ ] Release the dataset and training scripts.
+- [x] Release the dataset and training scripts.
 - [ ] Release the evaluation code.
 - [ ] Release the code for data generation pipeline.
 
