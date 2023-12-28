@@ -63,7 +63,7 @@ class DataArguments:
     image_token_len: int = 0
     image_aspect_ratio: str = 'square'
     image_grid_pinpoints: Optional[str] = field(default=None)
-    dataset_config: Optional[str] = field(default='./osprey/configs/stage1.py',
+    dataset_config: Optional[str] = field(default='./osprey/configs/stage1.json',
                                           metadata={'help': 'Path to the dataset config file.'})
 
 @dataclass

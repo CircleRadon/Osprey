@@ -104,6 +104,25 @@ pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
 
+## Training 🚀
+- **Stage1: Image-Text Alignment Pre-training**
+  - The pretrained projector weights for Convnext-large-CLIP can be found in [projector weights](https://huggingface.co/sunshine-lwt/osprey-v1.0-mlp2x-512px-convnext-pretrain-vicuna-7b-v1.5/tree/main).
+
+- **Stage2: Mask-Text Alignment Pre-training**
+  - Download [vicuna-7b-v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5/tree/main).
+  - Download projector weights trained in stage1: [projector weights](https://huggingface.co/sunshine-lwt/osprey-v1.0-mlp2x-512px-convnext-pretrain-vicuna-7b-v1.5/tree/main).
+  - Set `model_name_or_path` in `stage2.sh` to the path of `vicuna-7b-v1.5`.
+  - Set `pretrain_mm_mlp_adapter` in `stage2.sh` to the path of `mm_projector`.
+  - Set `vision_tower` in `stage2.sh` to the path of [Convnext-large-CLIP-model](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin).
+  - Run `sh scripts/stage2.sh`.
+
+- **Stage3: End-to-End Fine-tuning**
+
+  - Set `model_name_or_path` in `stage2.sh` to the path of `stage2 checkpoint`.
+  - Set `vision_tower` in `stage2.sh` to the path of [Convnext-large-CLIP-model](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin).
+  - Run `sh scripts/stage3.sh`.
+
+
 ## Checkpoints 🤖
 1. Convnext-large-CLIP-model🤗: [model](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin)
 2. Osprey-7b model🤗: [model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)

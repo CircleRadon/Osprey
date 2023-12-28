@@ -1,0 +1,43 @@
+[
+    {
+        "type": "OspreyShortForm",
+        "ann_file": "./data/Osprey-724K/osprey_short_form.json",
+        "img_prefix": "./data/coco_imgs/"
+    },
+
+    {
+        "type": "OspreyLVISPosNeg",
+        "ann_file": "./data/Osprey-724K/osprey_lvis_positive_negative.json",
+        "img_prefix": "./data/coco_imgs/"
+    },
+
+    {
+        "type": "OspreyConversations",
+        "ann_file": "./data/Osprey-724K/osprey_conversation.json",
+        "img_prefix": "./data/coco_imgs/"
+    },
+
+    {
+        "type": "OspreyDetailedDescription",
+        "ann_file": "./data/Osprey-724K/osprey_detailed_description.json",
+        "img_prefix": "./data/coco_imgs/"
+    },
+   
+    {
+        "type": "OspreyPartLevel",
+        "ann_file": "./data/Osprey-724K/osprey_part_level.json",
+        "img_prefix": "./data/coco_imgs/"
+    },
+
+    {
+        "type": "VGDATA",
+        "ann_file": "./data/vg/vg_train_with_mask.json",
+        "img_prefix": "./data/vg/image"
+    },
+    
+    {
+        "type": "vcr",
+        "ann_file": "./data/vcr/train.jsonl",
+        "img_prefix": "./data/vcr/vcr1images"
+    }
+]

@@ -48,7 +48,7 @@ class MaskExtractor(nn.Module):
             num_feats = len(self.feature_name)
             mask_feats = mask.new_zeros(num_feats, mask.shape[1], 1024)
             for i, name in enumerate(self.feature_name):
-                feat = feats[name]
+                feat = feats[name][idx].unsqueeze(0)
 
                 raw_dtype = feat.dtype
                 feat = feat.to(mask.dtype)
@@ -75,7 +75,7 @@ class MaskExtractor(nn.Module):
                 mask_feat = mask_feat.reshape(*mask_feat_raw.shape[:2], -1)
                 mask_feat = mask_feat.to(raw_dtype)
                
-                mask_feats[i] = mask_feat
+                mask_feats[i] = mask_feat[0]
             mask_feats = mask_feats.sum(0)
             self.feat_linear = self.feat_linear.to(dtype=mask_feats.dtype, device=mask_feats.device)
             mask_feats_linear = self.feat_linear(mask_feats)
@@ -111,4 +111,3 @@ class MaskPooling(nn.Module):
             mask / denorm,
         )
         return mask_pooled_x
-
