@@ -12,7 +12,7 @@
 
 
 - COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip), `imgs` should contain all the images including training set and validation set.
-- pascal_part: [train.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/pascalpart_train.json?download=true), [VOCdevkit](https://github.com/facebookresearch/VLPart/tree/main/datasets).
+- pascal_part: [train.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/pascalpart_train.json?download=true), [VOCdevkit](http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar).
 - partImagenet: [train_format.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/partImagenet_train_format.json?download=true),
 [PartImageNet_OOD](https://drive.google.com/file/d/19kA8-pAxssQI0GD5H8y8KESGaALwChtx/view?usp=sharing).
 - refcocos: [refcoco](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/finetune_refcoco_train_with_mask.json?download=true), [refcoco+](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/finetune_refcoco%2B_train_with_mask.json?download=true).
