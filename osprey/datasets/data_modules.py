@@ -82,7 +82,7 @@ def build_osprey_dataset(dataset_config,
     
     dataset_type = dataset_config.pop('type')
 
-    if dataset_type == 'coco_det':
+    if dataset_type == 'coco_data':
         dataset = COCODataset(
             **dataset_config,
             tokenizer=tokenizer,

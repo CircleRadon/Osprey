@@ -8,7 +8,11 @@ class CLIPVisionTower(nn.Module):
     def __init__(self, args, img_size=512, delay_load=False):
         super().__init__()
 
-        self.clip_model = args.mm_vision_tower
+        # test
+        if hasattr(args, 'mm_vision_tower'):
+            self.clip_model = args.mm_vision_tower
+        else: # train
+            self.clip_model = args.vision_tower
         self.is_loaded = False
         self.img_size = img_size
 
