@@ -27,6 +27,8 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 </div>
 
 ## Updates 📌
+[2024/1/15]🔥 We released the [evaluation](./osprey/eval/README.md) code.
+
 [2023/12/29]🔥 We released the training code and [Osprey-724K](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) dataset.
 
 [2023/12/18]🔥 We released the code, [osprey-7b model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
@@ -144,10 +146,14 @@ Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the pa
 </div>
 
 
+## Evaluation 🔎
+See [evaluation](./osprey/eval/README.md) for details.
+
+
 ## TODO List 📝
 - [x] Release the checkpoints, inference codes and demo.
 - [x] Release the dataset and training scripts.
-- [ ] Release the evaluation code.
+- [x] Release the evaluation code.
 - [ ] Release the code for data generation pipeline.
 
 

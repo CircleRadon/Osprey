@@ -1,0 +1,19 @@
+0:road,railroad
+1:sidewalk,pavement
+2:building,buildings,edifice,edifices,house,ceiling
+3:wall,walls,brick wall,stone wall,tile wall,wood wall
+4:fence,fences
+5:pole,poles
+6:traffic light,traffic lights
+7:traffic sign,stop sign
+8:vegetation,tree,trees,palm tree,bushes
+9:terrain,river,sand,sea,snow,water,mountain,grass,dirt,rock
+10:sky,clouds
+11:person
+12:rider
+13:car,cars
+14:truck,trucks
+15:bus,buses
+16:train,trains,locomotive,locomotives,freight train
+17:motorcycle,motorcycles
+18:bicycle,bicycles,bike,bikes
