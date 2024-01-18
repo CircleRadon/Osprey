@@ -81,12 +81,27 @@ password: osprey
 pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
 
-3. Download [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) to checkpoints.
+3. Download all the checkpoints:
+
+- [Osprey-7b](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)
+- [CLIP-convnext](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin)
+- [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
+
+The default path of all the checkpoints:
+```
+├── demo
+    ├── checkpoints
+    │   ├── Osprey_7b
+    │   └── sam_vit_b_01ec64.pth 
+    └── open_clip_pytorch_model.bin
+```
+
+Or change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the Absolute Path of `open_clip_pytorch_model.bin`.
 
 4. Run `app.py`.
 ```
 cd demo
-python app.py --model checkpoint/osprey_7b
+python app.py --model checkpoints/Osprey_7b
 ```
 
 ## Install 🛠️
@@ -136,10 +151,9 @@ The all datasets for training can be found in [Dataset preparation](./dataset.md
 
 
 ## Checkpoints 🤖
-1. Convnext-large-CLIP-model🤗: [model](https://huggingface.co/laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup/blob/main/open_clip_pytorch_model.bin)
-2. Osprey-7b model🤗: [model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)
 
-Then change the "mm_vision_tower" in `config.json`  of Osprey-7b model to the path of `Convnext-large-CLIP-model`.
+Osprey-7b model🤗: [model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)
+
 
 <div align=center>
 <img src="./assets/performance.png" />
