@@ -11,7 +11,7 @@ from osprey.mm_utils import tokenizer_image_token
 from osprey.train.train import preprocess_multimodal
 from osprey.train.train import DataArguments
 from osprey.model.language_model.osprey_llama import OspreyLlamaForCausalLM
-from mmdet.datasets.api_wrappers import COCO
+from pycocotools.coco import COCO
 from pycocotools import mask as maskUtils
 import numpy as np
 from PIL import Image
@@ -63,9 +63,9 @@ class REFCOCOG_EVAL():
         self.gt_all['annotations'] = []
         self.root_path = root_path
         self.coco = COCO(ann_file)
-        self.img_ids = self.coco.get_img_ids()
+        self.img_ids = self.coco.getImgIds()
         for i, img in enumerate(tqdm(self.img_ids)):
-            data = self.coco.load_imgs([img])[0]
+            data = self.coco.loadImgs([img])[0]
             self.forward_single(data)
 
         final = json.dumps(self.captions_all)
@@ -86,8 +86,8 @@ class REFCOCOG_EVAL():
         width = inputs['width']
         round_ids = 0
         last_source = dict()
-        annotations_ids = self.coco.get_ann_ids([inputs['id']])
-        annotations = self.coco.load_anns(annotations_ids)
+        annotations_ids = self.coco.getAnnIds([inputs['id']])
+        annotations = self.coco.loadAnns(annotations_ids)
         for i in range(len(annotations)):
             caption = {}
             gt = {}
