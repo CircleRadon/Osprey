@@ -154,6 +154,7 @@ The all datasets for training can be found in [Dataset preparation](./dataset.md
 
 Osprey-7b model🤗: [model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)
 
+We also provide the checkpoint of intermediate stage2, please check [model](https://huggingface.co/sunshine-lwt/Osprey-7b-stage2/tree/main).
 
 <div align=center>
 <img src="./assets/performance.png" />
