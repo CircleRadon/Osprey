@@ -27,6 +27,8 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 </div>
 
 ## Updates 📌
+[2024/2/27]🔥 Osprey has been accepted to CVPR2024!
+
 [2024/1/15]🔥 We released the [evaluation](./osprey/eval/README.md) code.
 
 [2023/12/29]🔥 We released the training code and [Osprey-724K](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) dataset.
