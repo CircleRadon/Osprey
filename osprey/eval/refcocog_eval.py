@@ -209,7 +209,7 @@ def get_init_inputs(img_path,
 
     sources = dict()
     sources['conversations'] = []
-    question = 'Can you give me a short description of the region <mask><pos>?'
+    question = 'Please give me a short description of <mask><pos>.'
 
     sources['conversations'].append({'from': 'human', 'value': begin_str+question})
     
@@ -231,5 +231,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     refcocog_eval = REFCOCOG_EVAL(args.model)
-    refcocog_eval(args.img, args.json)
+    refcocog_eval.forward(args.img, args.json)
 
