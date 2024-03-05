@@ -209,7 +209,7 @@ def get_init_inputs(img_path,
 
     sources = dict()
     sources['conversations'] = []
-    question = 'Can you give me a description of the region <mask><pos>?'
+    question = 'Can you give me a short description of the region <mask><pos>?'
 
     sources['conversations'].append({'from': 'human', 'value': begin_str+question})
     
