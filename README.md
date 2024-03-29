@@ -27,6 +27,8 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 </div>
 
 ## Updates 📌
+[2024/3/29]🔥 We released [Osprey-Chat](https://huggingface.co/sunshine-lwt/Osprey-Chat-7b/tree/main) model, which exhibits better conversation and image-level understanding&reasoning capabilities.
+
 [2024/2/27]🔥 Osprey has been accepted to CVPR2024!
 
 [2024/1/15]🔥 We released the [evaluation](./osprey/eval/README.md) code.
