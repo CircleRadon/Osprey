@@ -2,7 +2,7 @@
 
 This document provides instructions on evaluating Osprey on four representative tasks, including open-vocabulary segmentation, referring object classification, detailed region description and region level captioning.
 
- We have developed two types of models：the first is [Osprey](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)， the second  is [Osprey-Chat](https://huggingface.co/sunshine-lwt/Osprey-Chat-7b/tree/main)(denote `Osprey*` in our paper).  Osprey-Chat exhibits better conversion and   image-level understanding   capabilities  with additional llava data(llava_v1_5_mix665k.json).
+ We have developed two types of models：the first is [Osprey](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main)， the second  is [Osprey-Chat](https://huggingface.co/sunshine-lwt/Osprey-Chat-7b/tree/main)(denote `Osprey*` in our paper).  Osprey-Chat exhibits better conversation and  image-level understanding&reasoning capabilities with additional llava data(llava_v1_5_mix665k.json).
 
 ## 1. Open-Vocabulary Segmentation
 - Download [SentenceBERT model](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), which is used for calculating the semantic similarity.
