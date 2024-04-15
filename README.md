@@ -173,7 +173,7 @@ See [evaluation](./osprey/eval/README.md) for details.
 - [x] Release the checkpoints, inference codes and demo.
 - [x] Release the dataset and training scripts.
 - [x] Release the evaluation code.
-- [ ] Release the code for data generation pipeline.
+- [x] Release the code for data generation pipeline.
 
 
 ## Acknowledgement 💌
