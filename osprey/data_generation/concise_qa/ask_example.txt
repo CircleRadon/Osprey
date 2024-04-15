@@ -1,0 +1,18 @@
+Whole description: "The image presents a lively market scene with a group of people buying fruits and bags. There are multiple individuals in the market, all browsing through the fresh produce available. A significant variety of fruits are showcased in the market, including bananas, oranges, and apples. Bananas can be seen in several groups, with some green and yellow bananas occupying different areas of the market. Meanwhile, oranges and apples are displayed in smaller sections among the fruits. In addition to fruits, handbags are also being sold at the market, attracting the attention of the customers. Overall, the market bustles with activity as people gather around the fresh fruits and bags, contemplating their purchases."
+
+Description of each region is listed below:
+
+<region1> (person: [0.507,0.409,0.698,0.740]):
+gray shirt wearing glasses
+woman with gray shirt standing next to man
+woman in gray shirt facing camera on right
+the woman in the grey shirt with a watch on her wrist ..
+a short haired woman in jeans shopping
+
+<region2> (person: [0.243,0.469,0.558,0.746]):
+navy blue shirt
+woman back in blue
+the lady with the blue shirt
+the back of an older woman with her hair in a barrette with a blue jacket on
+a woman is wearing blue sweater
+

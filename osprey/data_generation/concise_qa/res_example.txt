@@ -1,0 +1,16 @@
+Question 1: What is the woman in <region1> wearing on her wrist?
+
+Answer 1: Watch.
+
+Question 2: What is the color of the older woman's shirt in <region2>?
+
+Answer 2: Navy blue.
+
+Question 3: What hair accessory does the older woman in <region2> have?
+
+Answer 3: Barrette.
+
+Question 4: Which direction is the older woman in <region2> facing?
+
+Answer 4: Away.
+

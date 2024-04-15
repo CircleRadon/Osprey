@@ -1,0 +1,16 @@
+The detailed description of this image:
+In the image, a man wearing a white apron and a ball cap is standing in a kitchen. He appears to be a chef or a baker and is actively sliding a pizza into a brick oven. The kitchen is well-equipped with various tools and utensils, such as spoons and bowls, which are placed on the dining table and countertops. A chair is positioned near the table, and multiple bowls can be found throughout the kitchen. The scene conveys a sense of preparation and anticipation for the dish being cooked.
+chair: [0.437,0.840,0.808,1.000]
+person: [0.530,0.881,0.998,0.987]
+person: [0.223,0.202,0.580,0.954]
+spoon: [0.068,0.423,0.089,0.435]
+Specially, there are 2 special regions: <region1> and <region2>.
+For each one region, you receive several sentences as the description of this region in this image you are observing.
+For <regin1>(person: [0.223,0.202,0.580,0.954]):
+man chef
+man cooking
+
+For <regin2>(person: [0.530,0.881,0.998,0.987]):
+i think its a table infront of the chair
+top of head bottom right corner
+part of head seen near chair
