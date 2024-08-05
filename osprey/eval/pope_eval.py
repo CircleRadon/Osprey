@@ -57,8 +57,12 @@ class POPE_EVAL():
         ans_file = open(answer_file, 'w')
         
         for data in tqdm(data_all):
-            img_path = os.path.join(root_path, data['image'].split('_')[-1])
-            image = Image.open(img_path).convert('RGB')
+            try:
+                img_path = os.path.join(root_path, data['image'])
+                image = Image.open(img_path).convert('RGB')
+            except:
+                img_path = os.path.join(root_path, data['image'].split('_')[-1])
+                image = Image.open(img_path).convert('RGB')
             
             init_inputs = get_init_inputs(image,
                                         self.image_processor,
