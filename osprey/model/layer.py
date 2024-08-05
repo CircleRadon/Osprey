@@ -40,6 +40,9 @@ class MaskExtractor(nn.Module):
     def forward(self, feats, masks):
         query_feats = []
         pos_feats = []
+        if masks is None:
+            return query_feats, pos_feats
+
         num_imgs = len(masks)
 
         for idx in range(num_imgs):

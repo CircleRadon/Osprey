@@ -175,7 +175,9 @@ class OspreyMetaForCausalLM(ABC):
                 else:
                     
                     mask_idx = torch.nonzero(cur_input_ids==self.tokenizer.convert_tokens_to_ids(['<mask>'])[0])
-                    assert len(mask_idx) == len(mask_feats[batch_idx]), "mask num not equal to mask feats"
+
+                    if len(mask_feats)!=0:
+                        assert len(mask_idx) == len(mask_feats[batch_idx]), "mask num not equal to mask feats"
                    
                     _l = 0
                     for i, idx in enumerate(mask_idx):
