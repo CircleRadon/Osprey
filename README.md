@@ -26,6 +26,18 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 
 </div>
 
+<details open><summary>💡 Some of our other multimodal-LLM projects may interest you ✨. </summary><p>
+<!--  may -->
+
+> [**VideoRefer Suite: Advancing Spatial-Temporal Object Understanding with Video LLM**](https://arxiv.org/abs/2501.00599) <br>
+> Yuqian Yuan, Hang Zhang, Wentong Li, Zesen Cheng, Boqiang Zhang, Long Li, Xin Li, Deli Zhao, Wenqiao Zhang, Yueting Zhuang, Jianke Zhu, Lidong Bing <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VideoRefer)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VideoRefer.svg?style=social)](https://github.com/DAMO-NLP-SG/VideoRefer)  [![arXiv](https://img.shields.io/badge/Arxiv-2501.00599-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.00599) <br>
+
+> [**TokenPacker: Efficient Visual Projector for Multimodal LLM**](https://arxiv.org/abs/2407.02392) <br>
+> Wentong Li*, Yuqian Yuan*, Jian Liu, Dongqi Tang, Song Wang, Jianke Zhu, Lei Zhang <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/CircleRadon/TokenPacker)  [![github](https://img.shields.io/github/stars/CircleRadon/TokenPacker.svg?style=social)](https://github.com/CircleRadon/TokenPacker)  [![arXiv](https://img.shields.io/badge/Arxiv-2407.02392-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2407.02392) <br>
+
+
 ## Updates 📌
 [2025/2/27]🔥 Our new work, [VideoRefer Suite](https://github.com/DAMO-NLP-SG/VideoRefer), has been accept to CVPR2025! This project focuses on video referring.
 
@@ -38,6 +50,7 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 [2023/12/29]🔥 We released the training code and [Osprey-724K](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) dataset.
 
 [2023/12/18]🔥 We released the code, [osprey-7b model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
+
 
 ## What is Osprey 👀
 Osprey is a mask-text instruction tuning approach that extends MLLMs by incorporating pixel-wise mask regions into language instructions, enabling **fine-grained visual understanding**.  Based on input mask region, Osprey generate the semantic descriptions including **short description** and **detailed description**.
