@@ -44,6 +44,8 @@ A part of <i>Along the River During the Qingming Festival</i> (清明上河图)
 
 [2025/2/27]🔥 Our new work, [VideoRefer Suite](https://github.com/DAMO-NLP-SG/VideoRefer), has been accept to CVPR2025! This project focuses on video referring.
 
+[2025/4/22]🔥 Our defined metrics (Sem. Sim. & Sem. IoU) on Referring Object Classification have been adopted in [ChatRex](https://arxiv.org/abs/2411.18363) (IDEA).
+
 [2024/3/29]🔥 We released [Osprey-Chat](https://huggingface.co/sunshine-lwt/Osprey-Chat-7b/tree/main) model, which exhibits better conversation and image-level understanding&reasoning capabilities.
 
 [2024/2/27]🔥 Osprey has been accepted to CVPR2024!
