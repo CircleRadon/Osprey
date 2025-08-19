@@ -14,7 +14,7 @@
 - COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip), `imgs` should contain all the images including training set and validation set.
 - pascal_part: [train.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/pascalpart_train.json?download=true), [VOCdevkit](http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar).
 - partImagenet: [train_format.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/partImagenet_train_format.json?download=true),
-[PartImageNet_OOD](https://drive.google.com/file/d/19kA8-pAxssQI0GD5H8y8KESGaALwChtx/view?usp=sharing).
+[PartImageNet_OOD](https://huggingface.co/datasets/turkeyju/PartImageNet/blob/main/PartImageNet_OOD.zip).
 - refcocos: [refcoco](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/finetune_refcoco_train_with_mask.json?download=true), [refcoco+](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/finetune_refcoco%2B_train_with_mask.json?download=true).
 - vg: [vg_train_with_mask.json](https://huggingface.co/datasets/sunshine-lwt/Osprey-TrainingData/resolve/main/vg_train_with_mask.json?download=true) (mask is generated from [HQ-SAM](https://github.com/SysCV/sam-hq)), images can be downloaded from [OpendataLab](https://opendatalab.com/OpenDataLab/Visual_Genome_Dataset_V1_dot_2), `image` should contain all the vg images(VG_100K and VG_100K_2).
 - vcr: [vcr](https://visualcommonsense.com/download/).
